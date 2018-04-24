@@ -133,6 +133,9 @@ wget -O /opt/zimbra-install/zimbra-zcs-8.7.11.tar.gz https://files.zimbra.com/do
 echo "Fetches the list of available updates"
 apt-get update -y
 
+## TO-DO: Check connection to hkp://keyserver.ubuntu.com:11371
+## https://wiki.zimbra.com/wiki/Error_%22Unable_to_retrive_Zimbra_GPG_key_for_package_validation%22
+
 echo "Extracting files from the archive"
 tar xzvf /opt/zimbra-install/zimbra-zcs-8.7.11.tar.gz -C /opt/zimbra-install/
 

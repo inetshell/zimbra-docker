@@ -130,6 +130,9 @@ EOF
 echo "Downloading Zimbra Collaboration 8.7.11"
 wget -O /opt/zimbra-install/zimbra-zcs-8.7.11.tar.gz https://files.zimbra.com/downloads/8.7.11_GA/zcs-8.7.11_GA_1854.UBUNTU16_64.20170531151956.tgz
 
+echo "Fetches the list of available updates"
+apt-get update -y
+
 echo "Extracting files from the archive"
 tar xzvf /opt/zimbra-install/zimbra-zcs-8.7.11.tar.gz -C /opt/zimbra-install/
 
